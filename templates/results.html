@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MRI Image Denoiser Results</title>
+    </head>
+    <body>
+        <h1>MRI Image Denoiser Results</h1>
+        <h2>Original Image:</h2>
+        <img src="{{ url_for('static', filename='uploads/' + img_orig_filename) }}"><br><br>
+        <h2>Denoised Image:</h2>
+        <img src="{{ url_for('static', filename='uploads/' + img_denoised_filename) }}"><br><br>
+        <a href="{{ url_for('home') }}">Back to Home</a>
+    </body>
+</html>

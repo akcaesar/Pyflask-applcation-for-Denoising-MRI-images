@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MRI Image Denoiser</title>
+    </head>
+    <body>
+        <h1>MRI Image Denoiser</h1>
+        <form action="{{ url_for('denoise') }}" method="post" enctype="multipart/form-data">
+            <label for="image">Choose an MRI image to denoise:</label><br>
+            <input type="file" name="image" id="image"><br><br>
+            <label for="method">Choose a denoising method:</label><br>
+            <select name="method" id="method">
+                <option value="tv_chambolle">Total Variation (TV) Chambolle</option>
+                <option value="nl_means">Non-local Means</option>
+                <option value="wavelet">Bayesian Wavelet Denoising</option>
+            </select><br><br>
+            <input type="submit" value="Denoise">
+        </form>
+    </body>
+</html>
