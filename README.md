@@ -1,5 +1,6 @@
-# Pyflask-applcation-for-Denoising-MRI-images
+# Pyflask-application-for-Denoising-MRI-images
 A simple pyflask application that accepts input MRI images and denoises it using TV loss, wavelet based and NLM methods
+
 **Project Title:** MRI Image Denoiser
 
 **Project Description:** This project is a web application that allows users to upload MRI images and denoise them using one of three denoising methods: Total Variation (TV) Chambolle, Non-local Means, or Bayesian Wavelet Denoising. The web application is built using Python and Flask, and it uses the scikit-image library for image processing.
